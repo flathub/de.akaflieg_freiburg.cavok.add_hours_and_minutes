@@ -19,8 +19,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/kebekus/addHoursAndMinutes.git",
-                    "tag": "0.9.3",
-                    "commit": "1a64502054d6e7983e9880a5e4c73291ef5dcc75"
+                    "tag": "0.9.5",
+                    "commit": ""
                 }
             ]
         }
