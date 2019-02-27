@@ -17,8 +17,10 @@
             "config-opts": ["-DCMAKE_BUILD_TYPE=RelWithDebInfo"],
             "sources": [
                 {
-                    "type": "archive",
-                    "path": "addhoursandminutes-0.9.6.tar.gz"
+                    "type": "git",
+                    "url": "https://gitlab.com/kebekus/addHoursAndMinutes.git",
+                    "tag": "1.0.0",
+                    "commit": "'28a16fae4cc1b1538fad2634f3493c8073d2686f'"
                 }
             ]
         }
