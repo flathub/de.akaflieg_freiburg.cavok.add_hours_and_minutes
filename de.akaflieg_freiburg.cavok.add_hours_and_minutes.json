@@ -1,7 +1,7 @@
 {
     "app-id": "de.akaflieg_freiburg.cavok.add_hours_and_minutes",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.14",
+    "runtime-version": "5.15",
     "sdk": "org.kde.Sdk",
     "command": "addhoursandminutes",
     "finish-args": [
