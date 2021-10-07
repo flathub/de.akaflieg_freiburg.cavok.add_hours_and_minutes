@@ -16,14 +16,11 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/qt/qt5.git",
+                    "url": "https://github.com/qt/qtbase.git",
                     "tag": "v6.2.0"
                 }
             ],
-            "buildsystem": "simple",
-            "build-commands": [
-                "./configure --prefix=/"
-            ]
+            "buildsystem": "cmake-ninja"
         },
         {
             "name": "addHoursAndMinutes",
