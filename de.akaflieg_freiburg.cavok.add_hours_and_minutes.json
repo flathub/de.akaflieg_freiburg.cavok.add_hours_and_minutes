@@ -13,14 +13,16 @@
     "modules": [
         {
             "name": "Qt6",
-            "buildsystem": "cmake-ninja",
-            "config-opts": ["-DCMAKE_BUILD_TYPE=RelWithDebInfo"],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/qt/qt5.git",
                     "tag": "v6.2.0"
                 }
+            ],
+            "buildsystem": "simple",
+            "build-commands": [
+                "./configure --prefix=/"
             ]
         },
         {
