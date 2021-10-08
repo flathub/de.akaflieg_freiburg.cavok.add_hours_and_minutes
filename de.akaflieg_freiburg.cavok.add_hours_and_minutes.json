@@ -20,8 +20,8 @@
                     "tag": "v6.2.0"
                 }
             ],
-            "buildsystem": "cmake-ninja"
-            "config-opts": ["-DCMAKE_BUILD_TYPE=RelWithDebInfo"],
+            "buildsystem": "cmake-ninja",
+            "config-opts": ["-DCMAKE_BUILD_TYPE=RelWithDebInfo"]
         },
         {
             "name": "qtsvg",
@@ -32,11 +32,11 @@
                     "tag": "v6.2.0"
                 }
             ],
-            "buildsystem": "cmake-ninja"
+            "buildsystem": "cmake-ninja",
             "config-opts": [
 		"-DCMAKE_FIND_ROOT_PATH:PATH=/app",
 		"-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo"
-	    ],
+	    ]
         },
         {
             "name": "addHoursAndMinutes",
