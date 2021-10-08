@@ -1,8 +1,8 @@
 {
     "app-id": "de.akaflieg_freiburg.cavok.add_hours_and_minutes",
-    "runtime": "org.kde.Platform",
-    "runtime-version": "5.15",
-    "sdk": "org.kde.Sdk",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "21.08.4",
+    "sdk": "org.freedesktop.Sdk",
     "command": "addhoursandminutes",
     "finish-args": [
         "--share=ipc",
@@ -13,6 +13,7 @@
     "modules": [
         {
             "name": "Qt6",
+            "config-opts": ["-DCMAKE_BUILD_TYPE=RelWithDebInfo"],
             "sources": [
                 {
                     "type": "git",
