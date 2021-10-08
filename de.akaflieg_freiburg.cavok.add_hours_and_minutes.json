@@ -1,7 +1,7 @@
 {
     "app-id": "de.akaflieg_freiburg.cavok.add_hours_and_minutes",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "21.08.4",
+    "runtime-version": "21.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "addhoursandminutes",
     "finish-args": [
