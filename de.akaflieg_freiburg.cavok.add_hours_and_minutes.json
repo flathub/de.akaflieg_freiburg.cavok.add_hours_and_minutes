@@ -10,6 +10,14 @@
         "--socket=wayland",
         "--device=dri"
     ],
+    "cleanup": [
+        "include",
+        "lib/*.a",
+        "lib/*.prl",
+        "lib/cmake",
+        "lib/debug",
+        "libexec"
+    ],
     "modules": [
         {
             "name": "qtbase",
@@ -21,7 +29,11 @@
                 }
             ],
             "buildsystem": "cmake-ninja",
-            "config-opts": ["-DCMAKE_BUILD_TYPE=RelWithDebInfo"]
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DQT_BUILD_EXAMPLES_BY_DEFAULT=OFF",
+                "-DQT_BUILD_TESTS_BY_DEFAULT=OFF"
+            ]
         },
         {
             "name": "qtsvg",
@@ -34,9 +46,9 @@
             ],
             "buildsystem": "cmake-ninja",
             "config-opts": [
-		"-DCMAKE_FIND_ROOT_PATH:PATH=/app",
-		"-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo"
-	    ]
+                "-DCMAKE_FIND_ROOT_PATH:PATH=/app",
+                "-DCMAKE_BUILD_TYPE:STRING=Release"
+            ]
         },
         {
             "name": "qttools",
@@ -49,9 +61,9 @@
             ],
             "buildsystem": "cmake-ninja",
             "config-opts": [
-		"-DCMAKE_FIND_ROOT_PATH:PATH=/app",
-		"-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo"
-	    ]
+                "-DCMAKE_FIND_ROOT_PATH:PATH=/app",
+                "-DCMAKE_BUILD_TYPE:STRING=Release"
+            ]
         },
         {
             "name": "qtshadertools",
@@ -64,9 +76,9 @@
             ],
             "buildsystem": "cmake-ninja",
             "config-opts": [
-		"-DCMAKE_FIND_ROOT_PATH:PATH=/app",
-		"-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo"
-	    ]
+                "-DCMAKE_FIND_ROOT_PATH:PATH=/app",
+                "-DCMAKE_BUILD_TYPE:STRING=Release"
+            ]
         },
         {
             "name": "qtdeclarative",
@@ -79,9 +91,9 @@
             ],
             "buildsystem": "cmake-ninja",
             "config-opts": [
-		"-DCMAKE_FIND_ROOT_PATH:PATH=/app",
-		"-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo"
-	    ]
+                "-DCMAKE_FIND_ROOT_PATH:PATH=/app",
+                "-DCMAKE_BUILD_TYPE:STRING=Release"
+            ]
         },
         {
             "name": "addHoursAndMinutes",
@@ -92,11 +104,11 @@
                     "commit": "39c49f5"
                 }
             ],
-	    "buildsystem": "cmake-ninja",
+            "buildsystem": "cmake-ninja",
             "config-opts": [
-		"-DCMAKE_FIND_ROOT_PATH:PATH=/app",
-		"-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo"
-	    ]
+                "-DCMAKE_FIND_ROOT_PATH:PATH=/app",
+                "-DCMAKE_BUILD_TYPE:STRING=Release"
+            ]
         }
     ]
 }
