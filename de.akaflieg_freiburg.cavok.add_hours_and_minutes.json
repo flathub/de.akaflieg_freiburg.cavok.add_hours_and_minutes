@@ -62,7 +62,24 @@
             "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DCMAKE_FIND_ROOT_PATH:PATH=/app",
-                "-DCMAKE_BUILD_TYPE:STRING=Release"
+                "-DCMAKE_BUILD_TYPE:STRING=Release",
+                "-DQT_BUILD_EXAMPLES_BY_DEFAULT=OFF",
+                "-DQT_BUILD_TESTS_BY_DEFAULT=OFF",
+                "-DFEATURE_assistant=ON",
+                "-DFEATURE_clang=OFF",
+                "-DFEATURE_clangcpp=OFF",
+                "-DFEATURE_designer=ON",
+                "-DFEATURE_distancefieldgenerator=OFF",
+                "-DFEATURE_kmap2qmap=OFF",
+                "-DFEATURE_macdeployqt=OFF",
+                "-DFEATURE_pixeltool=OFF",
+                "-DFEATURE_pkg_config=OFF",
+                "-DFEATURE_qdbus=OFF",
+                "-DFEATURE_qev=OFF",
+                "-DFEATURE_qtattributionsscanner=OFF",
+                "-DFEATURE_qtdiag=OFF",
+                "-DFEATURE_qtplugininfo=OFF",
+                "-DFEATURE_windeployqt=OFF"
             ]
         },
         {
@@ -92,8 +109,11 @@
             "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DCMAKE_FIND_ROOT_PATH:PATH=/app",
-                "-DCMAKE_BUILD_TYPE:STRING=Release"
-            ]
+                "-DCMAKE_BUILD_TYPE:STRING=Release",
+                "-DQT_BUILD_EXAMPLES_BY_DEFAULT=OFF",
+                "-DQT_BUILD_TESTS_BY_DEFAULT=OFF",
+                "-DFEATURE_qml_debug=OFF"
+           ]
         },
         {
             "name": "addHoursAndMinutes",
