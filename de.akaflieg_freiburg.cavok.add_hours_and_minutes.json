@@ -11,12 +11,8 @@
         "--device=dri"
     ],
     "cleanup": [
-        "include",
-        "lib/*.a",
-        "lib/*.prl",
-        "lib/cmake",
-        "lib/debug",
-        "libexec"
+        "/app/qtTemporary",
+        "/qtTemporary"
     ],
     "modules": [
         {
@@ -25,12 +21,13 @@
                 {
                     "type": "git",
                     "url": "https://github.com/qt/qtbase.git",
-                    "tag": "v6.4.2"
+                    "tag": "v6.5.0"
                 }
             ],
             "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=Release",
+		"-DCMAKE_INSTALL_PREFIX:PATH=/app/qtTemporary",
                 "-DQT_BUILD_EXAMPLES_BY_DEFAULT=OFF",
                 "-DQT_BUILD_TESTS_BY_DEFAULT=OFF"
             ]
@@ -41,13 +38,14 @@
                 {
                     "type": "git",
                     "url": "https://github.com/qt/qtsvg.git",
-                    "tag": "v6.4.2"
+                    "tag": "v6.5.0"
                 }
             ],
             "buildsystem": "cmake-ninja",
             "config-opts": [
-                "-DCMAKE_FIND_ROOT_PATH:PATH=/app",
-                "-DCMAKE_BUILD_TYPE:STRING=Release"
+                "-DCMAKE_BUILD_TYPE:STRING=Release",
+                "-DCMAKE_FIND_ROOT_PATH:PATH=/app/qtTemporary",
+		"-DCMAKE_INSTALL_PREFIX:PATH=/app/qtTemporary"
             ]
         },
         {
@@ -56,13 +54,14 @@
                 {
                     "type": "git",
                     "url": "https://github.com/qt/qttools.git",
-                    "tag": "v6.4.2"
+                    "tag": "v6.5.0"
                 }
             ],
             "buildsystem": "cmake-ninja",
             "config-opts": [
-                "-DCMAKE_FIND_ROOT_PATH:PATH=/app",
                 "-DCMAKE_BUILD_TYPE:STRING=Release",
+                "-DCMAKE_FIND_ROOT_PATH:PATH=/app/qtTemporary",
+		"-DCMAKE_INSTALL_PREFIX:PATH=/app/qtTemporary",
                 "-DQT_BUILD_EXAMPLES_BY_DEFAULT=OFF",
                 "-DQT_BUILD_TESTS_BY_DEFAULT=OFF",
                 "-DFEATURE_assistant=ON",
@@ -88,13 +87,15 @@
                 {
                     "type": "git",
                     "url": "https://github.com/qt/qtshadertools.git",
-                    "tag": "v6.4.2"
+                    "tag": "v6.5.0"
                 }
             ],
             "buildsystem": "cmake-ninja",
             "config-opts": [
-                "-DCMAKE_FIND_ROOT_PATH:PATH=/app",
-                "-DCMAKE_BUILD_TYPE:STRING=Release"
+		"-DCMAKE_BUILD_TYPE:STRING=Release",
+                "-DCMAKE_FIND_ROOT_PATH:PATH=/app/qtTemporary",
+		"-DCMAKE_INSTALL_PREFIX:PATH=/app/qtTemporary"
+
             ]
         },
         {
@@ -103,16 +104,17 @@
                 {
                     "type": "git",
                     "url": "https://github.com/qt/qtdeclarative.git",
-                    "tag": "v6.4.2"
+                    "tag": "v6.5.0"
                 }
             ],
             "buildsystem": "cmake-ninja",
             "config-opts": [
-                "-DCMAKE_FIND_ROOT_PATH:PATH=/app",
                 "-DCMAKE_BUILD_TYPE:STRING=Release",
+                "-DCMAKE_FIND_ROOT_PATH:PATH=/app/qtTemporary",
+		"-DCMAKE_INSTALL_PREFIX:PATH=/app/qtTemporary",
+                "-DFEATURE_qml_debug=OFF",
                 "-DQT_BUILD_EXAMPLES_BY_DEFAULT=OFF",
-                "-DQT_BUILD_TESTS_BY_DEFAULT=OFF",
-                "-DFEATURE_qml_debug=OFF"
+                "-DQT_BUILD_TESTS_BY_DEFAULT=OFF"
            ]
         },
         {
@@ -122,13 +124,13 @@
                 {
 		    "type": "git",
                     "url": "https://github.com/Akaflieg-Freiburg/addhoursandminutes.git",
-		    "commit": "9f47523"
+		    "commit": "b63f113"
                 }
             ],
             "buildsystem": "cmake-ninja",
             "config-opts": [
-                "-DCMAKE_FIND_ROOT_PATH:PATH=/app",
-                "-DCMAKE_BUILD_TYPE:STRING=Release"
+                "-DCMAKE_BUILD_TYPE:STRING=Release",
+                "-DCMAKE_FIND_ROOT_PATH:PATH=/app/qtTemporary"
             ]
         }
     ]
