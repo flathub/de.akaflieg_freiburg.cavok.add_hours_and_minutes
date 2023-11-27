@@ -21,7 +21,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/qt/qtbase.git",
-                    "tag": "v6.5.0"
+                    "tag": "v6.6.1"
                 }
             ],
             "buildsystem": "cmake-ninja",
@@ -38,7 +38,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/qt/qtsvg.git",
-                    "tag": "v6.5.0"
+                    "tag": "v6.6.1"
                 }
             ],
             "buildsystem": "cmake-ninja",
@@ -54,7 +54,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/qt/qttools.git",
-                    "tag": "v6.5.0"
+                    "tag": "v6.6.1"
                 }
             ],
             "buildsystem": "cmake-ninja",
@@ -87,7 +87,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/qt/qtshadertools.git",
-                    "tag": "v6.5.0"
+                    "tag": "v6.6.1"
                 }
             ],
             "buildsystem": "cmake-ninja",
@@ -104,7 +104,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/qt/qtdeclarative.git",
-                    "tag": "v6.5.0"
+                    "tag": "v6.6.1"
                 }
             ],
             "buildsystem": "cmake-ninja",
@@ -124,7 +124,7 @@
                 {
 		    "type": "git",
                     "url": "https://github.com/Akaflieg-Freiburg/addhoursandminutes.git",
-		    "commit": "b63f113"
+		    "commit": "2d5cd11"
                 }
             ],
             "buildsystem": "cmake-ninja",
