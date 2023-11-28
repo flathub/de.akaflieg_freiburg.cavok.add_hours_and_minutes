@@ -124,7 +124,7 @@
                 {
 		    "type": "git",
                     "url": "https://github.com/Akaflieg-Freiburg/addhoursandminutes.git",
-		    "commit": "2d5cd11"
+		    "commit": "965ab19"
                 }
             ],
             "buildsystem": "cmake-ninja",
