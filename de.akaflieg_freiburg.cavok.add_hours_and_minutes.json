@@ -1,7 +1,7 @@
 {
     "app-id": "de.akaflieg_freiburg.cavok.add_hours_and_minutes",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "22.08",
+    "runtime-version": "23.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "addhoursandminutes",
     "finish-args": [
@@ -21,7 +21,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/qt/qtbase.git",
-                    "tag": "v6.6.1"
+                    "tag": "v6.7.2"
                 }
             ],
             "buildsystem": "cmake-ninja",
@@ -38,7 +38,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/qt/qtsvg.git",
-                    "tag": "v6.6.1"
+                    "tag": "v6.7.2"
                 }
             ],
             "buildsystem": "cmake-ninja",
@@ -54,7 +54,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/qt/qttools.git",
-                    "tag": "v6.6.1"
+                    "tag": "v6.7.2"
                 }
             ],
             "buildsystem": "cmake-ninja",
@@ -87,7 +87,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/qt/qtshadertools.git",
-                    "tag": "v6.6.1"
+                    "tag": "v6.7.2"
                 }
             ],
             "buildsystem": "cmake-ninja",
@@ -104,7 +104,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/qt/qtdeclarative.git",
-                    "tag": "v6.6.1"
+                    "tag": "v6.7.2"
                 }
             ],
             "buildsystem": "cmake-ninja",
@@ -124,7 +124,7 @@
                 {
 		    "type": "git",
                     "url": "https://github.com/Akaflieg-Freiburg/addhoursandminutes.git",
-		    "commit": "d95a231"
+		    "commit": "2f1be59"
                 }
             ],
             "buildsystem": "cmake-ninja",
