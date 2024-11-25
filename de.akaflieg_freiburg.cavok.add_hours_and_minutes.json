@@ -1,7 +1,7 @@
 {
   "app-id": "de.akaflieg_freiburg.cavok.add_hours_and_minutes",
   "runtime": "org.kde.Platform",
-  "runtime-version": "6.7",
+  "runtime-version": "6.8",
   "sdk": "org.kde.Sdk",
   "command": "addhoursandminutes",
   "finish-args": [
@@ -12,13 +12,13 @@
   ],
   "modules": [
     {
-      "buildsystem": "cmake-ninja",
       "name": "addHoursAndMinutes",
+      "buildsystem": "cmake-ninja",
       "sources": [
         {
           "type": "git",
           "url": "https://github.com/Akaflieg-Freiburg/addhoursandminutes.git",
-          "commit": "d33aa2c"
+          "commit": "779155e"
         }
       ]
     }
